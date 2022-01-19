@@ -1,0 +1,136 @@
+body{
+    font-family: Arial, Helvetice, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+#map{
+position: relative;
+overflow: hidden;
+width: 100%;
+height: 100%;
+}
+
+.title{
+position: absolute;
+font-size: 50px;
+color: #333;
+text-transform: uppercase;
+z-index: 100;
+font-weight: bold;
+top: 100px;
+left: 100px;
+}
+.search-container{
+    position: absolute;
+    width: 400px;
+    height: 60px;
+    background-color: #454E53;
+    z-index: 100;
+    top: 230px;
+    left: 100px;
+    border-radius: 30px;
+    display: flex;
+
+}
+
+.search{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.search-container input{
+    background-color: transparent;
+    flex-grow: 1;
+    font-size: 25px;
+    border: none;
+    color: white;
+}
+.search-container input:focus{
+outline: none;
+}
+.search i{
+font-size: 25px;
+color: white;
+}
+.store-list-container{
+    position: absolute;
+    background: white;
+    width: 400px;
+    z-index: 100;
+    top: 320px;
+    left: 100px;
+    border-radius: 30px;
+    bottom: 20px;
+    display: flex;
+}
+.store-list{
+    padding-right: 20px;
+    padding-left: 20px;
+
+}
+.store-address{
+    font-size: 21px;
+    color: #514c4c;
+    margin-top: 30px;
+}
+.store-address span{
+    display: block;
+}
+.store-phone-number{
+    color: #B5ADAD;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.store-number{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    background-color: #454E53;
+    color: #B5ADAD;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.store-container-background{
+    display: flex;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-radius: 18px;
+
+}
+.stores-list{
+    padding-left:  20px;
+    padding-right: 20px;
+    overflow: scroll;
+    flex-grow: 1;
+
+}
+.store-info-container{
+  flex-grow: 1;
+}
+.store-numer-container{
+    display: flex;
+    align-items: center;
+}
+.store-container{
+    border-bottom: 1px solid #9797;
+    cursor: pointer;
+}
+
+.store-number-container{
+    display: flex;
+    align-items: center;
+}
+
+.store-container-background{
+    padding-left: 18px;
+    padding-right: 5px;
+}
+.store-container-background:hover{
+    background-color: #ccc;
+}
